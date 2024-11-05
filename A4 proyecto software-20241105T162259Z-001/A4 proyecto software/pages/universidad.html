@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Universidad</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        
+        nav.navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav.navbar .nav-button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+            cursor: pointer;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav.navbar .nav-button:hover {
+            background-color: #555;
+        }
+
+        
+        .exercise-section {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .exercise-section h2 {
+            color: #4CAF50;
+            font-size: 2em;
+        }
+
+        .exercise-section p {
+            font-size: 1.2em;
+        }
+
+       
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        ul a {
+            font-size: 1.2em;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        ul p {
+            font-size: 1em;
+            color: #333;
+        }
+
+       
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+
+        .button-container button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ejercicios de Universidad</h1>
+        </header>
+        
+        <nav class="navbar">
+            <button class="nav-button" onclick="showSection('calc-section')">Calculadora Interactiva</button>
+            <button class="nav-button" onclick="showSection('conv-section')">Conversiones de Números</button>
+            <button class="nav-button" onclick="showSection('text-section')">Análisis de Texto</button>
+            <button class="nav-button" onclick="showSection('arr-section')">Manejo de Arreglos</button>
+            <button class="nav-button" onclick="showSection('all-sections')">Mostrar Todo</button>
+        </nav>
+        
+        <section id="calc-section" class="exercise-section">
+            <h2>Calculadora Interactiva</h2>
+            <p>Crear una calculadora que realice operaciones básicas</p>
+            <ul>
+                <li><a href="./ejercicio 1 u.html">Ejercicio 1</a></li>
+                <p>Ejemplo: Sumar, restar, multiplicar y dividir dos números</p>
+            </ul>
+        </section>
+
+        <section id="conv-section" class="exercise-section">
+            <h2>Conversiones de Números</h2>
+            <ul>
+                <li><a href="../pages/ejercicio 2 u.html">Ejercicio 1</a></li>
+                <p>Convertir un número binario a hexadecimal y viceversa</p>
+                <li><a href="../pages/ejercicio 4 u.html">Ejercicio 2</a></li>
+                <p>Convertir un número binario a decimal y viceversa</p>
+            </ul>
+        </section>
+
+        <section id="text-section" class="exercise-section">
+            <h2>Análisis de Texto</h2>
+            <p>Contar caracteres, vocales, signos, espacios, palabras y dígitos en un texto</p>
+            <ul>
+                <li><a href="universidad_1.html">Ejercicio 1</a></li>
+                <p>Ingresar un párrafo y obtener el análisis del texto</p>
+                <li><a href="universidad_2.html">Ejercicio 2</a></li>
+                <p>Invertir una cadena de texto</p>
+                <li><a href="universidad_3.html">Ejercicio 3</a></li>
+                <p>Dadas dos frases, indicar cuál tiene más palabras</p>
+            </ul>
+        </section>
+
+        <section id="arr-section" class="exercise-section">
+            <h2>Manejo de Arreglos</h2>
+            <ul>
+                <li><a href="../pages/ejercicio10.html">Ejercicio 1</a></li>
+                <p>Dado un arreglo, obtener los números primos</p>
+                <li><a href="../pages/ejercicio11.html">Ejercicio 2</a></li>
+                <p>Dado un arreglo, obtener los números perfectos</p>
+                <li><a href="../pages/ejercicio12.html">Ejercicio 3</a></li>
+                <p>Dado un arreglo de notas obtener el promedio y la moda</p>
+            </ul>
+        </section>
+
+        <div class="button-container">
+            <button><a href="../index.html">Volver al Inicio</a></button>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            
+            const sections = document.querySelectorAll('.exercise-section');
+
+            
+            sections.forEach(section => {
+                section.style.display = sectionId === 'all-sections' ? 'block' : 'none';
+            });
+
+            
+            if (sectionId !== 'all-sections') {
+                document.getElementById(sectionId).style.display = 'block';
+            }
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('all-sections');
+        });
+    </script>
+</body>
+</html>

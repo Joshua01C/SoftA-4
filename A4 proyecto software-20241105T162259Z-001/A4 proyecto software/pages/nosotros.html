@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Educativo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; 
+            color: #f4f4f4; 
+        }
+
+      
+        header {
+            background-color: #e37406; 
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        
+        nav {
+            background-color: #020202; 
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em; 
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #388E3C; 
+            border-radius: 5px;
+        }
+
+ 
+        #nosotros {
+            background-color: #1E1E1E; 
+            padding: 40px 20px;
+            text-align: center;
+            color: #f4f4f4;
+        }
+
+        #nosotros h2 {
+            color: #4CAF50;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            background-color: #2E2E2E; 
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member h4 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .carnet-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .contact-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .contact-links li {
+            margin: 5px 0;
+        }
+
+        .contact-links a {
+            color: #4CAF50;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        
+        footer {
+            background-color: #1C1C1C; 
+            color: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header id="inicio">
+        <h1>Desarrollo de Software</h1>
+        <p>Plataforma interactiva para estudiantes de todos los niveles</p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="../pages/primaria.html">Primaria</a>
+                        <a href="../pages/secundaria.html">Secundaria</a>
+                        <a href="../pages/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="../pages/nosotros.html">Sobre nosotros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un equipo dedicado a la educación, comprometidos con proporcionar recursos educativos de alta calidad para estudiantes de todos los niveles. Nuestro objetivo es facilitar el aprendizaje a través de ejercicios interactivos y materiales didácticos.</p>
+        <h3>El Equipo</h3>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="../img/Carlos Nuñez.jpeg" alt="Carlos Nuñez" class="carnet-img">
+                <h4>Carlos Nuñez</h4>
+                <p>Fundador</p>
+                <ul class="contact-links">
+                    <li><a href="https://www.facebook.com/andreszxd.alvarez.73/" target="_blank"><img src="../img/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/darknessofsonic/?hl=es/" target="_blank"><img src="../img/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="https://github.com/" target="_blank"><img src="../img/github.png" alt="GitHub"> GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="../img/Sebastian Castro.jpeg" alt="Sebastian Castro" class="carnet-img">
+                <h4>Sebastian Castro</h4>
+                <p>Desarrollor</p>
+                <ul class="contact-links">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="https://github.com/" target="_blank"><img src="../img/github.png" alt="GitHub"> GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="../img/Presi.jpeg" alt="inserte nombre aqui" class="carnet-img">
+                <h4>Edward Curillo</h4>
+                <p>Presidente de desarrolladores</p>
+                <ul class="contact-links">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="https://github.com/" target="_blank"><img src="../img/github.png" alt="GitHub"> GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="../img/1.jpeg" alt="inserte nombre aqui" class="carnet-img">
+                <h4>Alinton Franco</h4>
+                <p>Diseñador</p>
+                <ul class="contact-links">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="https://github.com/" target="_blank"><img src="../img/github.png" alt="GitHub"> GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="../img/2.jpeg" alt="Inserte nombre aqui" class="carnet-img">
+                <h4>Justin Conde </h4>
+                <p>Desarrollador</p>
+                <ul class="contact-links">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="https://github.com/" target="_blank"><img src="../img/github.png" alt="GitHub"> GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo Grupo 8. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

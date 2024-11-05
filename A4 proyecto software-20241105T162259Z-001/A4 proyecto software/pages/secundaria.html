@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Secundaria</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        
+        nav.navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav.navbar .nav-button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+            cursor: pointer;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav.navbar .nav-button:hover {
+            background-color: #555;
+        }
+
+      
+        .exercise-section {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .exercise-section h2 {
+            color: #4CAF50;
+            font-size: 2em;
+        }
+
+        .exercise-section p {
+            font-size: 1.2em;
+        }
+
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        ul a {
+            font-size: 1.2em;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        ul p {
+            font-size: 1em;
+            color: #333;
+        }
+
+        
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+
+        .button-container button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ejercicios de Secundaria</h1>
+        </header>
+        
+        <nav class="navbar">
+            <button class="nav-button" onclick="showSection('bucles')">Ejercicios de Bucles</button>
+            <button class="nav-button" onclick="showSection('sumar')">Sumar Números Naturales</button>
+            <button class="nav-button" onclick="showSection('all-sections')">Mostrar Todo</button>
+        </nav>
+        
+        <section id="bucles" class="exercise-section">
+            <h2>Ejercicios de Bucles</h2>
+            <p>Identificar patrones y repeticiones</p>
+            <ul>
+                <li><a href="./ejercicio 1 s.html">Ejercicio 1</a></li>
+                <p>¿Cuántas veces se repite el número 3 en la secuencia 3, 6, 9, ...?</p>
+            </ul>
+        </section>
+        
+        <section id="sumar" class="exercise-section">
+            <h2>Sumar Números Naturales</h2>
+            <p>Pedir al usuario un número entero positivo y calcular la suma de todos
+                los números naturales hasta ese número usando un bucle</p>
+            <ul>
+                <li><a href="./ejercicio 2 s.html">Ejercicio 1</a></li>
+                <p>Si el usuario ingresa 5, el programa debería calcular 1+2+3+4+5 = 15.</p>
+            </ul>
+        </section>
+
+        <div class="button-container">
+            <button><a href="../index.html">Volver al Inicio</a></button>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.exercise-section');
+            sections.forEach(section => {
+                section.style.display = sectionId === 'all-sections' ? 'block' : 'none';
+            });
+
+            if (sectionId !== 'all-sections') {
+                document.getElementById(sectionId).style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('all-sections');
+        });
+    </script>
+</body>
+</html>
